@@ -1,0 +1,2 @@
+% line-height -> для этого делим данный с макета line-height на font-size!!!
+Пример: calc(32px / 26px) = 133%;

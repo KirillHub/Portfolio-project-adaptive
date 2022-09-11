@@ -1,28 +1,40 @@
-//import _scss files (_nullstyle)
+// base folder _mixins, _variables,  _fonts:
 @import 'base/mixins';
 @import 'base/variables';
-
-
-// fonts and null-style
 @import "base/fonts";
+
+
+// fonts and null-style:
 @import "null-style/nullstyle";
 
 
-//libs/animation
+// libs/animation:
 @import "libs/animate";
 
 
+// main style:
+.wrapper{
+	min-width: 100%;
+	overflow: hidden;
+}
+
+.container{
+	padding: 0 15px;
+	width: 1140px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
 
 // blocks(modules):
-
-
-// main
+@import "blocks/promo";
 
 
 /*============================================================================================================*/
 // _buttons style:
 
 // titles:
+@import "blocks/title";
 
 // forms:
 

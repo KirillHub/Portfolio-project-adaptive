@@ -218,4 +218,60 @@ h6 {
     animation-iteration-count: 1 !important;
   }
 }
+.wrapper {
+  min-width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 15px;
+  width: 1140px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.promo {
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
+  background-color: rgb(188, 229, 249);
+}
+.promo__body {
+  position: relative;
+  padding: 213px 0 229px;
+}
+.promo__body::after {
+  content: "";
+  background: url("../img/img/header/dev.png") no-repeat 90%;
+  position: absolute;
+  z-index: -1;
+  top: -5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  opacity: 1;
+}
+@media (max-width: 992px) {
+  .promo__body::after {
+    opacity: 0.5;
+  }
+}
+
 /*============================================================================================================*/
+.title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 60px;
+}
+.title_fz14 {
+  font-size: 14px;
+  line-height: 21px;
+}
+.title_fz16 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.title_fz48 {
+  font-size: 48px;
+}
