@@ -1,0 +1,35 @@
+//import _scss files (_nullstyle)
+@import 'base/mixins';
+@import 'base/variables';
+
+
+// fonts and null-style
+@import "base/fonts";
+@import "null-style/nullstyle";
+
+
+//libs/animation
+@import "libs/animate";
+
+
+
+// blocks(modules):
+div{
+	font-style: normal;
+	// font-weight: 700;
+}
+
+/*============================================================================================================*/
+// _buttons style:
+
+// titles:
+
+// forms:
+
+// overlay:
+
+//scroll animation (svg):
+
+// css animation:
+
+// iframe:
