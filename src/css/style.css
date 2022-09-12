@@ -251,10 +251,8 @@ h6 {
   min-width: 100%;
   opacity: 1;
 }
-.promo__title {
-  margin-top: 10px;
-}
 .promo__subtitle {
+  margin-bottom: 20px;
   padding: 0 0 0 10px;
   position: relative;
 }
@@ -269,7 +267,7 @@ h6 {
   left: 5px;
   top: -35%;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .promo__subtitle::before {
     width: 35px;
     height: 35px;
@@ -277,7 +275,7 @@ h6 {
     left: 1px;
   }
 }
-@media only screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .promo__subtitle::before {
     width: 30px;
     height: 30px;
@@ -367,6 +365,7 @@ h6 {
   flex-direction: column;
   align-items: end;
   cursor: pointer;
+  z-index: 100;
 }
 .hamburger span {
   display: block;
@@ -484,9 +483,6 @@ h6 {
   }
 }
 @media only screen and (max-width: 992px) {
-  .title {
-    font-size: 30px;
-  }
   .title_fz48 {
     font-size: 40px;
     line-height: 1.25;
@@ -512,6 +508,9 @@ h6 {
     left: 4%;
     background: url("../img/img/header/dev.png") no-repeat 45%/30%;
   }
+  .promo__subtitle {
+    margin-bottom: 15px;
+  }
 }
 @media only screen and (max-width: 576px) {
   .btn {
@@ -533,10 +532,13 @@ h6 {
     top: 5%;
     background: url("../img/img/header/dev.png") no-repeat 35%/23%;
   }
+  .hamburger span:not(:last-child) {
+    margin-bottom: 7px;
+  }
 }
 @media only screen and (max-width: 390px) {
   .promo__body {
-    padding: 45px 0 25px;
+    padding: 45px 0 35px;
   }
   .promo__body::after {
     opacity: 0.4;

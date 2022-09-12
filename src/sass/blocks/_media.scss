@@ -18,7 +18,6 @@
 	// }
 
 	.title{
-		font-size: 30px;
 		&_fz48{
 			font-size: 40px;
 			line-height: calc(50px / 40px);
@@ -58,6 +57,9 @@
 				background: url('../img/img/header/dev.png') no-repeat 45%/30%;
 			}
 		}
+		&__subtitle{
+			margin-bottom: 15px;
+		}
 	}
 
 }
@@ -93,12 +95,20 @@
 			}
 		}
 
+		.hamburger{
+			span{
+				&:not(:last-child){
+					margin-bottom: 7px;
+				}
+			}
+		}
+
 }
 @media only screen and (max-width: 390px){
 
 	.promo{
 		&__body{
-			padding: 45px 0 25px;
+			padding: 45px 0 35px;
 			&::after{
 				opacity: 0.40;
 				top: 0%;
