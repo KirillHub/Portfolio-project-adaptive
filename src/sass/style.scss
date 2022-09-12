@@ -22,7 +22,6 @@
 	padding: 0 15px;
 	width: 1140px;
 	margin: 0 auto;
-	border: 1px solid red;
 }
 
 
@@ -32,10 +31,11 @@
 
 /*============================================================================================================*/
 // _buttons style:
+@import "blocks/button";
 
 // titles:
 @import "blocks/title";
-
+ 
 // forms:
 
 // overlay:

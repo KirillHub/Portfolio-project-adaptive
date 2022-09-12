@@ -1,17 +1,50 @@
 .title{
 	font-weight: bold;
 	font-size: 36px;
-	line-height: 60px;
+	// line-height: 60px;
+	line-height: calc(60px / 36px);
 
 	&_fz14{
 		font-size: 14px;
-		line-height: 21px;
+		line-height: calc(21px / 14px);
 	}
 	&_fz16{
 		font-size: 16px;
-		line-height: 24px;
+		line-height: calc(24px / 16px);
 	}
 	&_fz48{
 		font-size: 48px;
 	}
+
+	@media(max-width: 992px){
+		.title{
+			font-size: 30px;
+		}
+		&_fz48{
+			font-size: 40px;
+			line-height: calc(50px / 40px);
+		}
+	}
+	@media(max-width: 768px){
+		.title{
+			//! later adaptive .title
+		}
+		&_fz48{
+			font-size: 35px;
+			line-height: calc(37px / 35px);
+		}
+	}
+	@media(max-width: 576px){
+		.title{
+			//! later adaptive .title
+		}
+		&_fz48{
+			font-size: 26px;
+			line-height: calc(29px / 26px);
+		}
+		&_fz16{
+			font-size: 14px;
+		}
+	}
 }
+

@@ -1,0 +1,17 @@
+.btn{
+	height: 45px;
+	background: $orange-color-background;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	padding: 12px 25px;
+	display: flex;
+	align-items: center;
+
+	&_blue{
+		background-color: rgb(188, 229, 249);
+		box-shadow:none;
+	}
+	@media(max-width: 576px){
+		padding: 8px 20px;
+		height: 40px;
+	}
+}

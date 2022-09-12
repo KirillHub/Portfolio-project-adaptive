@@ -16,7 +16,7 @@
 		&::after{
 			content: "";
 			// background: url('../img/img/header/girl.jpg') no-repeat 60%/cover;
-			background: url('../img/img/header/dev.png') no-repeat 90%;
+			background: url('../img/img/header/dev.png') no-repeat right;
 			position: absolute;
 			z-index: -1;
 			top: -5%;
@@ -27,12 +27,65 @@
 			opacity: 1; 
 	
 			@media(max-width: 992px){
-				opacity: 0.5;
-			// background: url('../img/img/header/dev.png') no-repeat 65%;
-			// left: -50px;
-
+				// opacity: 0.5;
+				top: -10%;
+				background: url('../img/img/header/dev.png') no-repeat 70%;
 			}
+			@media(max-width: 768px){
+				// opacity: 0.40;
+				top: -10%;
+				left: 4%;
+				background: url('../img/img/header/dev.png') no-repeat 45%/30%;
+			}
+			@media(max-width: 576px){
+				// opacity: 0.40;
+				left: -2%;
+				top: 5%;
+				background: url('../img/img/header/dev.png') no-repeat 35%/23%;
+			}
+			@media(max-width: 390px){
+				opacity: 0.40;
+				top: 0%;
+				left: -5%;
+				background: url('../img/img/header/dev.png') no-repeat 25%/20%;
+			}
+		}
+		@media(max-width: 992px){
+			padding: 160px 0 160px;
+		}
+		@media(max-width: 768px){
+			padding: 130px 0 80px;
+		}
+		@media(max-width: 576px){
+			padding: 90px 0 65px;
+		}
+		@media(max-width: 390px){
+			padding: 45px 0 25px;
 		}
 	}
 
+	&__title{
+		margin-top: 10px;
+	}
+	&__btns{
+		margin-top: 25px;
+		display: flex;
+		width: 250px;
+		justify-content: space-between;
+		align-items: center;
+
+		@media(max-width: 390px){
+		margin-top: 25px;
+		width: 220px;
+		}
+	}
+	&__link{
+		font-weight: 700;
+		line-height: calc(21px / 14px);
+		color: inherit;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 }

@@ -21,7 +21,6 @@
  }
 
 
-
  // Arguments
  @mixin rtl($property, $ltr-value, $rtl-value) {
   #{$property}: $ltr-value;
@@ -48,3 +47,14 @@
 	box-shadow: 3px 3px 20px #51ec13;
 	border:none;
 }
+
+
+// circle
+@mixin  before_circle{
+	&::before{
+		content: '';
+		width: 36px;
+		height: 36px;
+		background-color: $orange-color-background;
+	}
+} 
