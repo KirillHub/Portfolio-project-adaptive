@@ -241,11 +241,11 @@ h6 {
 }
 .promo__body::after {
   content: "";
-  background: url("../img/img/header/dev.png") no-repeat right;
+  background: url("../img/img/header/dev.png") no-repeat right/55%;
   position: absolute;
   z-index: -1;
   top: -5%;
-  left: 0;
+  left: 5%;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -315,7 +315,7 @@ h6 {
   border-radius: 50%;
   z-index: -1;
   left: 5px;
-  top: -31%;
+  top: -35%;
 }
 .promo__btns {
   margin-top: 25px;
@@ -337,6 +337,35 @@ h6 {
 }
 .promo__link:hover {
   text-decoration: underline;
+}
+
+.sidepanel {
+  position: fixed;
+  top: 230px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 340px;
+  z-index: 3;
+}
+.sidepanel__link img:hover {
+  transform: scale(140%);
+}
+.sidepanel__divider {
+  width: 2px;
+  height: 70px;
+  background-color: #000000;
+}
+.sidepanel__text {
+  height: 150px;
+  width: 25px;
+}
+.sidepanel__text span {
+  transform: rotate(-90deg) translate(-30%, -380%);
+  display: block;
+  width: 130px;
 }
 
 /*============================================================================================================*/

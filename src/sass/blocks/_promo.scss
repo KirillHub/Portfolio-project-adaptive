@@ -9,11 +9,11 @@
 		padding: 213px 0 229px;
 		&::after{
 			content: "";
-			background: url('../img/img/header/dev.png') no-repeat right;
+			background: url('../img/img/header/dev.png') no-repeat right/55%;
 			position: absolute;
 			z-index: -1;
 			top: -5%;
-			left: 0;
+			left: 5%;
 			right: 0; 
 			bottom: 0;   
 			min-width: 100%;
