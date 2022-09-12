@@ -4,18 +4,11 @@
 	z-index: 2; 
 	background-color: rgba(188,229,249,255);
 
-	// background: url('../img/img/header/header-logo.jpg') no-repeat 50%/cover;
-
-	// opacity: 0.8;
-
-
-
 	&__body{
 		position: relative;
 		padding: 213px 0 229px;
 		&::after{
 			content: "";
-			// background: url('../img/img/header/girl.jpg') no-repeat 60%/cover;
 			background: url('../img/img/header/dev.png') no-repeat right;
 			position: absolute;
 			z-index: -1;
@@ -27,18 +20,15 @@
 			opacity: 1; 
 	
 			@media(max-width: 992px){
-				// opacity: 0.5;
 				top: -10%;
 				background: url('../img/img/header/dev.png') no-repeat 70%;
 			}
 			@media(max-width: 768px){
-				// opacity: 0.40;
 				top: -10%;
 				left: 4%;
 				background: url('../img/img/header/dev.png') no-repeat 45%/30%;
 			}
 			@media(max-width: 576px){
-				// opacity: 0.40;
 				left: -2%;
 				top: 5%;
 				background: url('../img/img/header/dev.png') no-repeat 35%/23%;
@@ -66,6 +56,11 @@
 
 	&__title{
 		margin-top: 10px;
+	}
+	&__subtitle{
+		padding: 0 0 0 10px;
+		position: relative;
+		@include before_circle;
 	}
 	&__btns{
 		margin-top: 25px;

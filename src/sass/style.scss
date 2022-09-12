@@ -1,6 +1,6 @@
 // base folder _mixins, _variables,  _fonts:
-@import 'base/mixins';
 @import 'base/variables';
+@import 'base/mixins';
 @import "base/fonts";
 
 
@@ -22,6 +22,7 @@
 	padding: 0 15px;
 	width: 1140px;
 	margin: 0 auto;
+	// border: 1px solid red;
 }
 
 

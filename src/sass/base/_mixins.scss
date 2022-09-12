@@ -35,12 +35,10 @@
 }
 
 
-
 @mixin border {
 	border: $border;
 	padding: 20px;
 }
-
 
 //box-shadow
 @mixin box-shadow{
@@ -48,13 +46,17 @@
 	border:none;
 }
 
-
-// circle
+// ::before circle
 @mixin  before_circle{
 	&::before{
+		position: absolute;
 		content: '';
-		width: 36px;
-		height: 36px;
+		width: 40px;
+		height: 40px;
 		background-color: $orange-color-background;
+		border-radius: 50%;
+		z-index: -1;
+		left: 5px;
+		top: -31%;
 	}
 } 
