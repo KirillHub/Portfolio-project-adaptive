@@ -58,5 +58,16 @@
 		z-index: -1;
 		left: 5px;
 		top: -35%;
+
+		@media only screen and (max-width: 768px){
+			width: 35px;
+			height: 35px;
+			top: -25%;
+			left: 1px;
+		}
+		@media only screen and (max-width: 576px){
+			width: 30px;
+			height: 30px;
+		}
 	}
 } 

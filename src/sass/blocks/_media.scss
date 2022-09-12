@@ -1,0 +1,115 @@
+// special settings for social pannel::after
+@media only screen and (max-width: 1320px){
+	.sidepanel{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	// .container{
+	// 	max-width: 960px;
+	// }
+		
+
+}
+@media only screen and (max-width: 992px){
+	// .container{
+	// 	max-width: 720px;
+	// }
+
+	.title{
+		font-size: 30px;
+		&_fz48{
+			font-size: 40px;
+			line-height: calc(50px / 40px);
+		}
+	}
+
+	.promo{
+		&__body{
+			padding: 160px 0 160px;
+			&::after{
+				top: -10%;
+				background: url('../img/img/header/dev.png') no-repeat 70%;
+			}
+		}
+	}
+
+}
+@media only screen and (max-width: 768px){
+	// .container{
+	// 	max-width: 540px;
+	// }
+
+	.title{
+	//? later adaptive
+		&_fz48{
+			font-size: 35px;
+			line-height: calc(37px / 35px);
+		}
+	}
+
+	.promo{
+		&__body{
+			padding: 130px 0 80px;
+			&::after{
+				top: -10%;
+				left: 4%;
+				background: url('../img/img/header/dev.png') no-repeat 45%/30%;
+			}
+		}
+	}
+
+}
+@media only screen and (max-width: 576px){
+	// .container{
+	// 	width: 100%;
+	// }
+
+		.btn{
+			padding: 8px 20px;
+			height: 40px;
+		}
+
+		.title{
+			//? later adaptive
+				&_fz48{
+					font-size: 26px;
+					line-height: calc(29px / 26px);
+				}
+				&_fz16{
+					font-size: 14px;
+				}
+			}
+
+		.promo{
+			&__body{
+				padding: 90px 0 65px;
+				&::after{
+					left: -2%;
+					top: 5%;
+					background: url('../img/img/header/dev.png') no-repeat 35%/23%;
+				}
+			}
+		}
+
+}
+@media only screen and (max-width: 390px){
+
+	.promo{
+		&__body{
+			padding: 45px 0 25px;
+			&::after{
+				opacity: 0.40;
+				top: 0%;
+				left: -5%;
+				background: url('../img/img/header/dev.png') no-repeat 25%/20%;
+			}
+		}
+		&__btns{
+			margin-top: 25px;
+			width: 220px;
+		}
+	}
+	
+}
