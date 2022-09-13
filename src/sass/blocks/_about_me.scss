@@ -1,39 +1,87 @@
+._grid-container{
+	margin:0 auto;
+	padding: 0 15px;
+
+	@media(min-width: 1170px){
+		width: 1140px;
+	}
+	@media(max-width: 1170px){
+		max-width: 1140px;
+	}
+}
+
 .about_me{
-	// height: 600px;
 	padding: 120px 0 100px 0;
+	display: grid;
 
 	&__body-grid{
-		display: grid;
-		grid-template-rows: repeat(auto-fill, minmax(260px, auto));
-		grid-template-columns: repeat(2, minmax(360px, auto));
-		grid-auto-rows: 267px;
 
-		// grid-template-areas: 
-		// "about_me__img about_me__descr"
-		// "about_me__img skills__blocks";
+		display: grid;
+		grid-template-rows: repeat(1, minmax(260px, auto));
+		grid-template-columns: repeat(auto-fill, minmax(360px, auto));
+		grid-auto-rows: minmax(260px, auto);
+		column-gap: 42px;
 	}
-	/*
-	&__img{
-		grid-row: 1/3;
-		img{
-			// width: 100%;
-			// object-fit: cover;
-		}
-	}
+
 	&__main{
 		display: grid;
-		grid-row: 1/3;
+		grid-template-areas: 
+		"top"
+		"footer";
 	}
-	&__body{
-		grid-row: 1/2;
+	&__img{
+		img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
-	&__skills{
-		grid-row: 2/3;
-		display: grid;
-		grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 260px);
+
+	&__title{
+		position: relative;
+		@include before_circle;
+		z-index: 1;
+		padding-left: 15px;
 	}
-	.skills__block{
-		
+
+	&__dash{
+		width: 60px;
+		border: 2px solid $orange-color-background;
+		background: $orange-color-background;
+		margin-bottom: 20px;
 	}
-	*/
+	&__descr{
+		max-width: 570px;
+		line-height: 21px;
+		margin-bottom: 40px;
+	}
+}
+
+.skills{
+	&__block{
+		display: flex;
+	}
+	&__img{
+		position: relative;
+		@include before_circle_special;
+		margin: 15px 20px 0 15px;
+	}
+	&__descr{
+		max-width: 200px;
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+#about_me__body{
+	grid-area: top;
+}
+#about_me__skills{
+	grid-area: footer;
+
+	display: grid;
+	grid-template: repeat(2, minmax(115px, auto)) / repeat(auto-fit, minmax(260px, auto));
+	grid-auto-rows: minmax(260px, auto);
+	column-gap: 50px;
+	row-gap: 20px;
 }

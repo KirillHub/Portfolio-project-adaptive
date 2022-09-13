@@ -10,6 +10,9 @@
 	// 	max-width: 960px;
 	// }
 		
+	._grid-container{
+		max-width: 1140px;
+	}
 
 }
 @media only screen and (max-width: 992px){
@@ -123,4 +126,11 @@
 		}
 	}
 	
+}
+
+// mobile first adaptive settings for grid elements
+@media only screen and(min-width: 1200px){
+	._grid-container{
+		width: 1140px;
+	}
 }
