@@ -1,6 +1,7 @@
 .divider{
 	margin-top: 0;
 }
+
 .work{
 	padding: 15px 0 146px 0;
 }
@@ -19,8 +20,8 @@
 			left: 50%;
 			transform: translate(-50%, -15%);
 			z-index: -1;
-			width: 35px;
-			height: 35px;
+			width: 30px;
+			height: 30px;
 			background-color: $orange-color-background;
 			border-radius: 50%;
 		}
@@ -30,3 +31,13 @@
 	}
 }
 
+.grid-container{
+	max-width: 1140px; 
+	display: grid;
+	grid-template-columns: repeat(4, 270px);
+	grid-template-rows: repeat(2, 270px);
+
+}
+.technology{
+	display: grid;
+}

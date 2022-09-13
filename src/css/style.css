@@ -628,13 +628,24 @@ h6 {
   left: 50%;
   transform: translate(-50%, -15%);
   z-index: -1;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   background-color: #FFA501;
   border-radius: 50%;
 }
 .work-header__subtitle {
   margin-bottom: 12px;
+}
+
+.grid-container {
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  grid-template-rows: repeat(2, 270px);
+}
+
+.technology {
+  display: grid;
 }
 
 /*============================================================================================================*/
