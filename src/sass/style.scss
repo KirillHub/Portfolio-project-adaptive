@@ -27,7 +27,7 @@
 .divider{
 	width: 60px;
 	height: 3px;
-	margin-top: 25px;
+	margin: 25px auto 0 auto;
 	background-color: $orange-color-background;
 }
 
@@ -36,7 +36,9 @@
 @import "blocks/sidepanel";
 @import "blocks/about_me";
 
-@import "blocks/about";
+// @import "blocks/about";
+@import "blocks/resume";
+
 
 /*============================================================================================================*/
 // _buttons style:
