@@ -13,6 +13,14 @@
 	._grid-container{
 		max-width: 1140px;
 	}
+	.about_me{
+		padding: 60px 0 70px 0;
+		&__img{
+			width: 85%;
+			margin: 0 auto;
+			object-position: center;
+		}
+	}
 
 }
 @media only screen and (max-width: 992px){
@@ -37,6 +45,13 @@
 		}
 	}
 
+	.about_me{
+		padding: 30px 0 30px 0;
+		&__img{
+			width: 60%;
+		}
+	}
+
 }
 @media only screen and (max-width: 768px){
 	// .container{
@@ -44,7 +59,6 @@
 	// }
 
 	.title{
-	//? later adaptive
 		&_fz48{
 			font-size: 35px;
 			line-height: calc(37px / 35px);
@@ -62,6 +76,24 @@
 		}
 		&__subtitle{
 			margin-bottom: 15px;
+		}
+	}
+
+	#about_me__skills{
+		grid-template: repeat(2, 115px) / repeat(auto-fill, minmax(260px, auto));
+		grid-auto-rows: 115px;
+	}
+
+	.about_me{
+		padding: 10px 0 10px 0;
+		&__img{
+			width: 50%;
+		}
+		&__title{
+			margin-top: 15px;
+		}
+		&__subtitle{
+			font-size: 28px;
 		}
 	}
 
@@ -107,7 +139,25 @@
 			}
 		}
 
+		.about_me{
+			padding: 0;
+			&__dash{
+				margin-bottom: 10px;
+			}
+			&__img{
+				width: 55%;
+			}
+			&__title{
+				margin-top: 15px;
+			}
+			&__subtitle{
+				font-size: 28px;
+				margin-bottom: 5px;
+			}
+		}
+
 }
+
 @media only screen and (max-width: 390px){
 
 	.promo{
@@ -124,6 +174,9 @@
 			margin-top: 25px;
 			width: 220px;
 		}
+	}
+	.about_me__body-grid{
+		grid-template-columns: repeat(auto-fill, minmax(270px, auto));
 	}
 	
 }

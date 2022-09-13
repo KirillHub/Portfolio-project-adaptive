@@ -329,20 +329,11 @@ h6 {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media (min-width: 1170px) {
-  ._grid-container {
-    width: 1140px;
-  }
-}
-@media (max-width: 1170px) {
-  ._grid-container {
-    max-width: 1140px;
-  }
-}
 
 .about_me {
   padding: 120px 0 100px 0;
   display: grid;
+  background-color: rgb(253, 251, 252);
 }
 .about_me__body-grid {
   display: grid;
@@ -362,10 +353,14 @@ h6 {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.about_me__subtitle {
+  margin-bottom: 10px;
+}
 .about_me__title {
   position: relative;
   z-index: 1;
   padding-left: 15px;
+  margin-top: 30px;
 }
 .about_me__title::before {
   position: absolute;
@@ -410,6 +405,7 @@ h6 {
 .skills__img {
   position: relative;
   margin: 15px 20px 0 15px;
+  z-index: 2;
 }
 .skills__img::before {
   position: absolute;
@@ -426,14 +422,16 @@ h6 {
   .skills__img::before {
     width: 35px;
     height: 35px;
-    top: -25%;
-    left: 1px;
+    top: -15%;
+    left: -20px;
   }
 }
 @media (max-width: 576px) {
   .skills__img::before {
     width: 30px;
     height: 30px;
+    left: -15px;
+    top: -13%;
   }
 }
 .skills__descr {
@@ -449,61 +447,13 @@ h6 {
 #about_me__skills {
   grid-area: footer;
   display: grid;
-  grid-template: repeat(2, minmax(115px, auto))/repeat(auto-fit, minmax(260px, auto));
+  grid-template: repeat(2, minmax(115px, auto))/repeat(auto-fill, minmax(260px, auto));
   grid-auto-rows: minmax(260px, auto);
   -moz-column-gap: 50px;
        column-gap: 50px;
   row-gap: 20px;
 }
 
-/*============================================================================================================*/
-/*
-._container{
-	margin: auto;
-	padding: 0 15px;
-	max-width: 992px;
-}
-
-.grid-container {
-	border: $border;
-	display: grid;
-	// min-width: 975px;
-	// margin: 0 auto;
-	grid-template-columns: repeat(auto-fill, minmax(250px, auto));
-	grid-template-rows: repeat(3, minmax(250px, auto));
-	grid-auto-rows: minmax(250px, auto);
-
-	gap: 10px;
-}
-.grid-el {
-	background-color:cadetblue;
-}
-
-*/
-/*
-
-.main{
-
-	display: grid;
-	&__body{
-	padding: 82px 0 88px 0;
-	display: grid;
-	}
-
-	&__blocks-container{
-		display: grid;
-		grid-template-rows:  repeat(2, minmax(160px, auto));
-		grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-		// grid-template: repeat(2, minmax(160px, auto))  / repeat(auto-fill, 240px);
-
-		gap: 3.5rem;
-		grid-auto-rows: minmax(160px, auto);
-
-		@media(max-width: 1200px){
-			gap: 2rem;
-		}
-	}
-*/
 /*============================================================================================================*/
 .btn {
   height: 45px;
@@ -664,6 +614,15 @@ h6 {
   ._grid-container {
     max-width: 1140px;
   }
+  .about_me {
+    padding: 60px 0 70px 0;
+  }
+  .about_me__img {
+    width: 85%;
+    margin: 0 auto;
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 @media only screen and (max-width: 992px) {
   .title_fz48 {
@@ -676,6 +635,12 @@ h6 {
   .promo__body::after {
     top: -10%;
     background: url("../img/img/header/dev.png") no-repeat 70%;
+  }
+  .about_me {
+    padding: 30px 0 30px 0;
+  }
+  .about_me__img {
+    width: 60%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -693,6 +658,22 @@ h6 {
   }
   .promo__subtitle {
     margin-bottom: 15px;
+  }
+  #about_me__skills {
+    grid-template: repeat(2, 115px)/repeat(auto-fill, minmax(260px, auto));
+    grid-auto-rows: 115px;
+  }
+  .about_me {
+    padding: 10px 0 10px 0;
+  }
+  .about_me__img {
+    width: 50%;
+  }
+  .about_me__title {
+    margin-top: 15px;
+  }
+  .about_me__subtitle {
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -718,6 +699,22 @@ h6 {
   .hamburger span:not(:last-child) {
     margin-bottom: 7px;
   }
+  .about_me {
+    padding: 0;
+  }
+  .about_me__dash {
+    margin-bottom: 10px;
+  }
+  .about_me__img {
+    width: 55%;
+  }
+  .about_me__title {
+    margin-top: 15px;
+  }
+  .about_me__subtitle {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
 }
 @media only screen and (max-width: 390px) {
   .promo__body {
@@ -732,6 +729,9 @@ h6 {
   .promo__btns {
     margin-top: 25px;
     width: 220px;
+  }
+  .about_me__body-grid {
+    grid-template-columns: repeat(auto-fill, minmax(270px, auto));
   }
 }
 @media only screen and (min-width: 1200px) {
