@@ -36,8 +36,10 @@
 	display: grid;
 	grid-template-columns: repeat(4, 270px);
 	grid-template-rows: repeat(2, 270px);
+	gap:12px;
 
 }
 .technology{
 	display: grid;
+	gap: 20px;
 }
