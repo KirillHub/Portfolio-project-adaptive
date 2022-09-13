@@ -462,13 +462,123 @@ h6 {
 }
 
 .resume {
-  padding: 0px 0px 100px 0;
+  padding: 15px 0 100px 0;
 }
 .resume__title {
+  position: relative;
   text-align: center;
+  z-index: 3;
+}
+.resume__title::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #FFA501;
+  border-radius: 50%;
+  z-index: -1;
+  left: 5px;
+  top: -35%;
+}
+@media (max-width: 768px) {
+  .resume__title::before {
+    width: 35px;
+    height: 35px;
+    top: -25%;
+    left: 1px;
+  }
+}
+@media (max-width: 576px) {
+  .resume__title::before {
+    width: 30px;
+    height: 30px;
+  }
+}
+.resume__title:before {
+  top: -8px;
+  left: 46.5%;
+  transform: translateX(-50%);
 }
 .resume__subtitle {
   text-align: center;
+}
+.resume__wrapper {
+  padding: 60px 65px 0 65px;
+  display: grid;
+  grid-template-columns: repeat(2, 425px);
+  -moz-column-gap: 135px;
+       column-gap: 135px;
+}
+.resume__body {
+  font-size: 12px;
+  line-height: 18px;
+}
+.resume__column-title {
+  padding: 0 0 0 35px;
+  position: relative;
+}
+.resume__column-title::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-color: #FFA501;
+  border-radius: 50%;
+}
+.resume__column li {
+  position: relative;
+}
+.resume__column li::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  top: -7.5px;
+  left: 0;
+  background-color: black;
+}
+.resume__item {
+  position: relative;
+}
+.resume__item-icon {
+  position: absolute;
+  left: 60px;
+  top: 0;
+  transform: translateY(20%);
+}
+.resume__item-icon::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #FFA501;
+  border-radius: 50%;
+  z-index: -1;
+  left: 5px;
+  top: -35%;
+}
+@media (max-width: 768px) {
+  .resume__item-icon::before {
+    width: 35px;
+    height: 35px;
+    top: -25%;
+    left: 1px;
+  }
+}
+@media (max-width: 576px) {
+  .resume__item-icon::before {
+    width: 30px;
+    height: 30px;
+  }
+}
+.resume__item-icon:before {
+  left: -20px;
+}
+.resume__item-head {
+  padding: 0 0 0 100px;
 }
 
 /*============================================================================================================*/
@@ -502,6 +612,10 @@ h6 {
 }
 .title_fz36 {
   font-size: 36px;
+}
+.title_fz20 {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .hamburger {
