@@ -534,8 +534,8 @@ h6 {
 .resume__column li::after {
   position: absolute;
   content: "";
+  height: calc(100% + 7px);
   width: 1px;
-  height: 100%;
   top: -7.5px;
   left: 0;
   background-color: black;
@@ -543,10 +543,21 @@ h6 {
 .resume__item {
   position: relative;
 }
+.resume__item::before {
+  position: absolute;
+  content: "";
+  left: 22px;
+  top: 40px;
+  width: 1px;
+  background-color: black;
+  height: 43.5px;
+  transform: rotate(90deg);
+  z-index: 1000;
+}
 .resume__item-icon {
   position: absolute;
   left: 60px;
-  top: 0;
+  top: 51px;
   transform: translateY(20%);
 }
 .resume__item-icon::before {
@@ -575,10 +586,22 @@ h6 {
   }
 }
 .resume__item-icon:before {
-  left: -20px;
+  width: 35px;
+  height: 35px;
+  left: -16px;
+  top: -12px;
+}
+.resume__item-location {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 12px;
+}
+.resume__item-body {
+  padding-left: 43px;
+  line-height: 18px;
 }
 .resume__item-head {
-  padding: 0 0 0 100px;
+  padding: 45px 0 0 100px;
 }
 
 /*============================================================================================================*/
