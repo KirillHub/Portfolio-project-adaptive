@@ -604,6 +604,39 @@ h6 {
   padding: 45px 0 0 100px;
 }
 
+.divider {
+  margin-top: 0;
+}
+
+.work {
+  padding: 15px 0 146px 0;
+}
+
+.work-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+.work-header__title {
+  margin-bottom: 19px;
+  position: relative;
+  z-index: 1;
+}
+.work-header__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  z-index: -1;
+  width: 35px;
+  height: 35px;
+  background-color: #FFA501;
+  border-radius: 50%;
+}
+.work-header__subtitle {
+  margin-bottom: 12px;
+}
+
 /*============================================================================================================*/
 .btn {
   height: 45px;

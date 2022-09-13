@@ -1,0 +1,32 @@
+.divider{
+	margin-top: 0;
+}
+.work{
+	padding: 15px 0 146px 0;
+}
+
+.work-header{
+	margin-bottom: 60px;
+	text-align: center;
+	&__title{
+		margin-bottom: 19px;
+		position: relative;
+		z-index: 1;
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, -15%);
+			z-index: -1;
+			width: 35px;
+			height: 35px;
+			background-color: $orange-color-background;
+			border-radius: 50%;
+		}
+	}
+	&__subtitle{
+		margin-bottom: 12px;
+	}
+}
+
