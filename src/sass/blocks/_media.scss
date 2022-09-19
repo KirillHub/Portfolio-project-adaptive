@@ -76,7 +76,10 @@
 
 	.work{
 	padding: 15px 0 60px 0;
-	&-header{
+		&__grid-container{
+			margin-bottom: 60px;
+		}
+		&-header{
 		margin-bottom: 50px;
 		}
 	}
@@ -136,6 +139,13 @@
 				grid-template-rows: minmax(170px, auto);
 				grid-template-columns: repeat(auto-fill,minmax(170px, auto) ) ;
 				grid-auto-rows: minmax(170px, auto);
+				margin-bottom: 40px;
+			}
+			&-footer{
+				&__body{
+					grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+					column-gap: 20px;
+				}
 			}
 	}
 	.technology{
@@ -232,6 +242,12 @@
 				}
 				&__header{
 					margin-bottom: 20px;
+				}
+				&-footer{
+					&__body{
+						grid-template-columns:  1fr;
+						
+					}
 				}
 		}
 

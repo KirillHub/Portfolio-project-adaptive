@@ -670,8 +670,8 @@ h6 {
   background-color: #FFA501;
   border-radius: 50%;
   z-index: -1;
-  left: -10%;
-  top: -50%;
+  left: -18px;
+  top: -10px;
 }
 .work-footer__block_main {
   display: flex;
@@ -924,6 +924,9 @@ h6 {
   .work {
     padding: 15px 0 60px 0;
   }
+  .work__grid-container {
+    margin-bottom: 60px;
+  }
   .work-header {
     margin-bottom: 50px;
   }
@@ -970,6 +973,12 @@ h6 {
     grid-template-rows: minmax(170px, auto);
     grid-template-columns: repeat(auto-fill, minmax(170px, auto));
     grid-auto-rows: minmax(170px, auto);
+    margin-bottom: 40px;
+  }
+  .work-footer__body {
+    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    -moz-column-gap: 20px;
+         column-gap: 20px;
   }
   .technology {
     padding: 15px 15px 10px 15px;
@@ -1044,6 +1053,9 @@ h6 {
   }
   .work__header {
     margin-bottom: 20px;
+  }
+  .work-footer__body {
+    grid-template-columns: 1fr;
   }
 }
 @media only screen and (max-width: 390px) {
