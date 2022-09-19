@@ -69,10 +69,22 @@
 			padding-left: 15px;
 		}
 		&__scale{
+			position: relative;
 			height: 14px;
-			width: 100%;
-			background: #E8E4DE;
+			background: #e8e1de;
 			border-radius: 4px;
+			width: 100%;
+			z-index: -3;
+
+				&_child{
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: #e65111;
+					height: 100%;
+					border-radius: 4px;
+					z-index: 1000;
+				}
 		}
 	}
 }
