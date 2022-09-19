@@ -625,8 +625,8 @@ h6 {
   grid-template-columns: repeat(4, 270px);
   grid-auto-rows: minmax(270px, auto);
   gap: 12px;
+  margin-bottom: 128px;
 }
-
 .work-header {
   margin-bottom: 60px;
   text-align: center;
@@ -650,6 +650,40 @@ h6 {
 }
 .work-header__subtitle {
   margin-bottom: 12px;
+}
+.work-footer__body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+  grid-template-rows: repeat(2, minmax(70px, auto));
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 30px;
+}
+.work-footer__title {
+  position: relative;
+}
+.work-footer__title::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #FFA501;
+  border-radius: 50%;
+  z-index: -1;
+  left: -10%;
+  top: -50%;
+}
+.work-footer__block_main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+  padding-left: 15px;
+}
+.work-footer__scale {
+  height: 14px;
+  width: 100%;
+  background: #E8E4DE;
+  border-radius: 4px;
 }
 
 .technology {
