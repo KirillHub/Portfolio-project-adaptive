@@ -1,5 +1,11 @@
+._grid-container{
+	margin:0 auto;
+	padding: 0 15px;
+}
+
 .resume{
-	padding: 15px 0 100px 0;
+	padding: 20px 0 100px 0;
+	// display: grid;
 	&__title{
 		position: relative;
 		text-align: center;
@@ -18,6 +24,8 @@
 		padding: 60px 65px 0 65px;
 		display: grid;
 		grid-template-columns: repeat(2, 425px);
+		grid-template-rows: repeat(1, minmax(370px, auto));
+		grid-auto-rows: minmax(370px, auto);
 		column-gap: 135px;
 	}
 	&__body{

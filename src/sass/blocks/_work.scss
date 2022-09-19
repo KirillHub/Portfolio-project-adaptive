@@ -4,6 +4,15 @@
 
 .work{
 	padding: 15px 0 146px 0;
+
+	&__grid-container{
+		max-width: 1140px;
+		display: grid;
+		grid-template-rows: repeat(2, minmax(270px, auto));
+		grid-template-columns: repeat(4, 270px);
+		grid-auto-rows: minmax(270px, auto);
+		gap:12px;
+	}
 }
 
 .work-header{
@@ -31,15 +40,25 @@
 	}
 }
 
-.grid-container{
-	max-width: 1140px; 
-	display: grid;
-	grid-template-columns: repeat(4, 270px);
-	grid-template-rows: repeat(2, 270px);
-	gap:12px;
 
-}
 .technology{
-	display: grid;
-	gap: 20px;
+	padding: 30px 30px 25px 30px;
+	&__img{
+		margin-bottom: 20px;
+		min-height: 65px;
+		img{
+			object-fit:cover;
+			height: 100%;
+		}
+	}
+	&__title{
+		margin-bottom: 15px;
+	}
+	&__descr{
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+#jquery-img{
+	padding-top: 15px;
 }
