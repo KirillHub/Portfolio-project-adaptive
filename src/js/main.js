@@ -19,14 +19,8 @@ const scale = document.querySelectorAll('.work-footer__scale_child');
 const persentCount = document.querySelectorAll('.work-footer__descr');
 
 persentCount.forEach((persentItem, persentIndex) => {
-	const count = parseInt(persentItem.textContent.match(/\d+/));
 
-	scale.forEach((item, index) => {
-		if (persentIndex === index) {
-			item.style.width = count + "%";
-			item.style.backgroundColor = '#FFA501';
-		}
-	});
+	scale[persentIndex].style.width = persentItem.innerHTML;
 });
 
 
