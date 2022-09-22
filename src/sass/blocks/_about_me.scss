@@ -39,6 +39,9 @@
 		z-index: 1;
 		padding-left: 15px;
 		margin-top: 30px;
+		&::before{
+			top: -5px;
+		}
 	}
 
 	&__dash{
@@ -76,7 +79,6 @@
 }
 #about_me__skills{
 	grid-area: footer;
-
 	display: grid;
 	grid-template: repeat(2, minmax(115px, auto)) / repeat(auto-fill, minmax(260px, auto));
 	grid-auto-rows: minmax(260px, auto);
