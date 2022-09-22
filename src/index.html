@@ -54,12 +54,12 @@
 			<aside class="sidepanel">
 				<a href="#" class="sidepanel__link"><img src="./img/icons/social/header-facebook.svg" alt="facebook"></a>
 				<a href="#" class="sidepanel__link"><img src="./img/icons/social/header-Instagram.svg" alt="instagram"></a>
-				<a href="https://github.com/KirillHub" class="sidepanel__link"><img src="./img/icons/social/header-github.svg"
-						alt="github"></a>
+				<a href="https://github.com/KirillHub" class="sidepanel__link"><img
+						src="./img/icons/social/header-github.svg" alt="github"></a>
 				<div class="sidepanel__divider"></div>
 				<div class="sidepanel__text"><span>Social networks</span></div>
 			</aside>
-			
+
 			<div class="menu">
 				<div class="menu__block">
 					<div class="menu__close">
@@ -72,7 +72,7 @@
 								 29.0226C27.6015 29.0226 28.0825 28.8385 28.4489 28.4721C29.1837 27.7376 29.1837 26.55 28.4489 25.8155L17.1568 14.5231Z"
 								fill="black" />
 						</svg>
-			
+
 					</div>
 					<nav>
 						<ul class="menu__list">
@@ -98,15 +98,15 @@
 				</div>
 				<div class="menu__overlay"></div>
 			</div>
-			
+
 			<section class="promo">
-			
+
 				<div class="hamburger">
 					<span></span>
 					<span class="long"></span>
 					<span></span>
 				</div>
-			
+
 				<div class="container">
 					<div class="promo__body">
 						<div class="promo__subtitle title title_fz16">My name is Kirill Litiak</div>
@@ -121,7 +121,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<section class="about_me">
 				<div class="_grid-container">
 					<div class="about_me__body-grid">
@@ -185,13 +185,13 @@
 										</p>
 									</div>
 								</div>
-			
+
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			
+
 			<!-- /* Ivan variate with second block ============================================================================================================*/ -->
 			<!-- <section class="about">
 				<div class="container">
@@ -263,13 +263,13 @@
 				</div>
 			</section> -->
 			<!--End of Ivan var-->
-			
+
 			<section class="resume">
 				<div class="_grid-container">
 					<h2 class="title title_fz16 title__section-title">Experience</h2>
 					<div class="title title_fz36 title__section-subtitle">My skills</div>
 					<div class="divider"></div>
-			
+
 					<div class="resume__wrapper">
 						<div class="resume__column">
 							<h3 class="title title_fz20 resume__column-title">Education</h3>
@@ -309,7 +309,7 @@
 								</li>
 							</ul>
 						</div>
-			
+
 						<div class="resume__column">
 							<h3 class="title title_fz20 resume__column-title">Work experience</h3>
 							<ul>
@@ -347,11 +347,11 @@
 								</li>
 							</ul>
 						</div>
-			
+
 					</div>
 				</div>
 			</section>
-			
+
 			<section class="work">
 				<div class="_grid-container">
 					<div class="work__header work-header">
@@ -490,13 +490,13 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<section class="portfolio">
 				<div class="_grid-container">
 					<h3 class="title__section-title title title_fz16">Portfolio</h3>
 					<div class="title__section-subtitle title title_fz36">My works</div>
 					<div class="divider"></div>
-			
+
 					<div class="portfolio__wrapper">
 						<a href="#" class="portfolio__item">
 							<img src="./img/img/portfolio/uber.jpg" alt="uber">
@@ -518,12 +518,12 @@
 						</a>
 					</div>
 			</section>
-			
+
 			<section class="price">
 				<div class="_grid-container">
 					<h3 id="title__section-title_price" class="title__section-title title title_fz16">Price list</h3>
 					<div class="divider"></div>
-			
+
 					<div class="price__grid-container">
 						<div class="price__grid-element">
 							<div class="price__title">Landing-page</div>
@@ -589,7 +589,7 @@
 								Or leave your details and I will write to you myself:
 							</div>
 
-							<form action="#" class="contacts__form">
+							<form name="form-contacts" action="#" class="contacts__form" id="contacts-form" method="get">
 								<div class="contacts__input">
 									<input required name="name" id="name" type="text" placeholder="Martin">
 									<label for="name">Your name</label>
@@ -599,7 +599,8 @@
 									<label for="email">Your mail</label>
 								</div>
 								<div class="contacts__textarea">
-									<textarea name="text" id="text"></textarea>
+									<textarea name="text" id="text" autocomplete="off"
+										placeholder="Please specify details"></textarea>
 									<label for="text">Your message</label>
 								</div>
 								<div class="contacts__triggers">
@@ -618,8 +619,12 @@
 		</main>
 	</div>
 
-
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="./js/jquery.validate.min.js"></script>
 	<script src="./js/main.js"></script>
+
 </body>
 
 </html>
+

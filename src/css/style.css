@@ -854,82 +854,6 @@ h6 {
 .contacts__social {
   padding: 8px 0 20px 0;
 }
-.contacts__form {
-  padding-top: 18px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px, auto));
-  grid-template-rows: repeat(auto-fit, minmax(45px, auto));
-  grid-auto-rows: minmax(45px, auto);
-  row-gap: 30px;
-  -moz-column-gap: 25px;
-       column-gap: 25px;
-}
-.contacts__form label {
-  display: block;
-  position: absolute;
-  height: 18px;
-  padding: 0 8px;
-  background-color: #fff;
-  font-size: 12px;
-  top: -9px;
-  left: 12px;
-}
-.contacts__input {
-  border: 1px solid #000000;
-  position: relative;
-}
-.contacts__input input {
-  height: 100%;
-  width: 100%;
-  min-height: 45px;
-  padding: 0px 10px;
-  font-size: 12px;
-  line-height: 18px;
-  color: #000000;
-}
-.contacts__textarea {
-  border: 1px solid #000000;
-  grid-column: 1/3;
-  position: relative;
-}
-.contacts__textarea textarea {
-  height: 100%;
-  width: 100%;
-  min-height: 190px;
-  padding: 15px;
-  resize: none;
-}
-.contacts__triggers {
-  display: grid;
-  grid-column: 1/3;
-  grid-template-rows: repeat(2/auto);
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-}
-.contacts__btn {
-  grid-column: 1/2;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  max-width: 220px;
-  justify-content: center;
-  text-align: center;
-}
-.contacts__policy {
-  grid-column: 2/3;
-  align-self: center;
-  font-size: 12px;
-  line-height: 18px;
-}
-.contacts__policy a {
-  color: #2306D6;
-}
-.contacts__policy a:hover {
-  text-decoration: underline;
-}
-.contacts__policy input {
-  margin-right: 10px;
-}
 
 /*============================================================================================================*/
 .btn {
@@ -1333,6 +1257,7 @@ h6 {
   }
   .about_me__img {
     width: 55%;
+    margin-bottom: 8px;
   }
   .about_me__title {
     margin-top: 15px;
@@ -1342,7 +1267,7 @@ h6 {
     margin-bottom: 5px;
   }
   .resume {
-    padding: 20px 0 20px 0;
+    padding: 30px 0 20px 0;
   }
   .resume__wrapper {
     padding: 15px 15px 0 15px;
@@ -1356,8 +1281,11 @@ h6 {
     font-size: 13px;
     padding-left: 40px;
   }
+  .resume .divider {
+    margin-bottom: 20px;
+  }
   .work {
-    padding: 15px 0 20px 0;
+    padding: 25px 0 20px 0;
   }
   .work__grid-container {
     grid-template-columns: repeat(auto-fill, auto);
@@ -1369,14 +1297,17 @@ h6 {
   .work-footer__body {
     grid-template-columns: 1fr;
   }
+  .work .divider {
+    margin-bottom: 20px;
+  }
   .portfolio {
-    padding: 10px 0px 25px 0px;
+    padding: 20px 0px 25px 0px;
   }
   .portfolio .divider {
     margin-bottom: 25px;
   }
   .price {
-    padding: 10px 0 25px 0;
+    padding: 20px 0 25px 0;
   }
   .price__title {
     line-height: 18px;
@@ -1390,7 +1321,7 @@ h6 {
     margin-bottom: 20px;
   }
   .contacts {
-    padding: 20px 0 30px 0;
+    padding: 20px 0 3 0px 0;
   }
   .contacts__wrapper {
     padding: 0;
@@ -1424,4 +1355,94 @@ h6 {
   ._grid-container {
     width: 1140px;
   }
+}
+.contacts__form {
+  padding-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, auto));
+  grid-template-rows: repeat(auto-fit, minmax(45px, auto));
+  grid-auto-rows: minmax(45px, auto);
+  row-gap: 30px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+}
+.contacts__form label {
+  display: block;
+  position: absolute;
+  height: 18px;
+  padding: 0 8px;
+  background-color: #fff;
+  font-size: 12px;
+  top: -9px;
+  left: 12px;
+}
+.contacts__input {
+  border: 1px solid #000000;
+  position: relative;
+}
+.contacts__input input {
+  height: 100%;
+  width: 100%;
+  min-height: 45px;
+  padding: 0px 10px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+.contacts__textarea {
+  border: 1px solid #000000;
+  grid-column: 1/3;
+  position: relative;
+}
+.contacts__textarea textarea {
+  height: 100%;
+  width: 100%;
+  min-height: 190px;
+  padding: 15px;
+  resize: none;
+}
+.contacts__triggers {
+  display: grid;
+  grid-column: 1/3;
+  grid-template-rows: repeat(2/auto);
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.contacts__btn {
+  grid-column: 1/2;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 220px;
+  justify-content: center;
+  text-align: center;
+}
+.contacts__policy {
+  grid-column: 2/3;
+  align-self: center;
+  font-size: 12px;
+  line-height: 18px;
+}
+.contacts__policy a {
+  color: #2306D6;
+}
+.contacts__policy a:hover {
+  text-decoration: underline;
+}
+.contacts__policy input {
+  margin-right: 10px;
+}
+
+.error {
+  position: relative;
+}
+
+label.error {
+  position: absolute;
+  left: 10px;
+  top: -30px;
+  color: #ce4646;
+  border: none;
+  text-align: center;
+  font-size: 13px;
 }
