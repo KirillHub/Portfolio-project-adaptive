@@ -24,7 +24,6 @@
 	margin: 0 auto;
 }
 
-
 .divider{
 	width: 60px;
 	height: 3px;
@@ -36,11 +35,11 @@
 @import "blocks/promo";
 @import "blocks/sidepanel";
 @import "blocks/about_me";
-
 // @import "blocks/about";
 @import "blocks/resume";
 @import "blocks/work";
-
+@import "blocks/portfolio";
+@import "blocks/price";
 
 /*============================================================================================================*/
 // _buttons style:

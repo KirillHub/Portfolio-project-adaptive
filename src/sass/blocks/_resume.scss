@@ -5,21 +5,6 @@
 
 .resume{
 	padding: 20px 0 100px 0;
-	// display: grid;
-	&__title{
-		position: relative;
-		text-align: center;
-		@include before_circle;
-		z-index: 3;
-		&:before{
-			top: -8px;
-			left: 46.5%;
-			transform: translateX(-50%);
-		}
-	}
-	&__subtitle{
-		text-align: center;
-	}
 	&__wrapper{
 		padding: 60px 65px 0 65px;
 		display: grid;

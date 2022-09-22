@@ -1,7 +1,7 @@
 .title{
 	font-weight: bold;
 	line-height: calc(60px / 36px);
-
+	margin-bottom: 12px;
 
 	&_fz14{
 		font-size: 14px;
@@ -20,6 +20,21 @@
 	&_fz20{
 		font-size: 20px;
 		line-height: 30px;
+	}
+	&__section-title{
+		margin-bottom: 15px;
+		text-align: center;
+		position: relative;
+		z-index: 2;
+		@include before_circle;
+		&:before{
+			top: -6px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&__section-subtitle{
+		text-align: center;
 	}
 }
 
