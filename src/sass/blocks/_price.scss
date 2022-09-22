@@ -8,7 +8,7 @@
 		padding: 0px 34px 0px 50px;
 		display: grid;
 		grid-template-columns: repeat(2, 390px);
-		grid-auto-rows: (3, minmax(44px, auto));
+		grid-template-rows: (3, minmax(44px, auto));
 		grid-auto-rows: minmax(44px, auto);
 		row-gap: 15px;
 		column-gap: 40px;
@@ -23,7 +23,8 @@
 		grid-column: 2/3;
 		align-items: end;
 		justify-content: end;
-		text-align: right;
+		// text-align: right;
+		justify-self: end;
 		font-weight: 700;
 		line-height: 21px;
 		margin-bottom: 5px;
