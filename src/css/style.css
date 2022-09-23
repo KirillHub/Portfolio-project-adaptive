@@ -772,9 +772,8 @@ h6 {
 .price__title:before {
   width: 15px;
   height: 15px;
-  left: -12%;
-  top: 50%;
-  transform: translateY(-50%);
+  left: -20px;
+  top: 3px;
 }
 .price__descr {
   grid-row: 2/3;
@@ -1084,11 +1083,14 @@ h6 {
     justify-content: center;
   }
   .portfolio__wrapper {
-    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, 280px);
+    grid-auto-rows: 280px;
+    justify-content: space-around;
+    row-gap: 35px;
   }
-  .portfolio__wrapper .vertical {
-    grid-column: 1/2;
-    grid-row: 2/4;
+  .portfolio__wrapper .horizontal, .portfolio__wrapper .vertical {
+    grid-column: unset;
+    grid-row: unset;
   }
   .contacts {
     padding: 15px 0 40px 0;
@@ -1213,14 +1215,30 @@ h6 {
   .contacts {
     padding: 10px 0 30px 0;
   }
+  .contacts__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contacts .contacts__form {
+    grid-template: 50px 200px 50px/repeat(2, 250px);
+  }
   .contacts__textarea {
     min-height: 50px;
   }
   .contacts__form {
     grid-template: none;
   }
+  .contacts #text {
+    padding-top: 10px;
+  }
 }
 @media only screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .container {
+    max-width: 540px;
+  }
   .btn {
     padding: 8px 20px;
     height: 40px;
@@ -1242,9 +1260,10 @@ h6 {
     padding: 90px 0 65px;
   }
   .promo__body::after {
+    opacity: 0.4;
     left: -2%;
     top: 5%;
-    background: url("../img/img/header/dev.png") no-repeat 35%/23%;
+    background: url("../img/img/header/dev.png") no-repeat 100%/60%;
   }
   .hamburger span:not(:last-child) {
     margin-bottom: 7px;
@@ -1303,6 +1322,9 @@ h6 {
   .portfolio {
     padding: 20px 0px 25px 0px;
   }
+  .portfolio__wrapper {
+    justify-content: center;
+  }
   .portfolio .divider {
     margin-bottom: 25px;
   }
@@ -1321,13 +1343,43 @@ h6 {
     margin-bottom: 20px;
   }
   .contacts {
-    padding: 20px 0 3 0px 0;
+    padding-bottom: 50px;
   }
-  .contacts__wrapper {
-    padding: 0;
+  .contacts .contacts__form {
+    grid-template-rows: 45px 45px 190px;
+    grid-template-columns: 1fr;
   }
-  .contacts__social {
-    grid-template: 1fr/1fr;
+  .contacts__input input {
+    height: 35px;
+    min-width: 100px;
+  }
+  .contacts__textarea {
+    grid-column: unset;
+    height: 140px;
+    width: 100%;
+  }
+  .contacts__triggers {
+    grid-column: unset;
+    grid-template-columns: 1fr;
+    -moz-column-gap: unset;
+         column-gap: unset;
+    row-gap: 20px;
+    position: relative;
+  }
+  .contacts__btn {
+    order: 2;
+    max-width: 220px;
+    margin: 0 auto;
+    grid-row: 3/4;
+  }
+  .contacts__policy {
+    grid-row: 2/3;
+    width: 240px;
+    margin: 0 auto;
+    line-height: 18px;
+    position: absolute;
+    left: -300px;
+    top: 20px;
   }
 }
 @media only screen and (max-width: 390px) {
@@ -1341,7 +1393,7 @@ h6 {
     opacity: 0.4;
     top: 0%;
     left: -5%;
-    background: url("../img/img/header/dev.png") no-repeat 25%/20%;
+    background: url("../img/img/header/dev.png") no-repeat 120%/50%;
   }
   .promo__btns {
     margin-top: 25px;
@@ -1349,6 +1401,18 @@ h6 {
   }
   .about_me__body-grid {
     grid-template-columns: repeat(auto-fill, minmax(270px, auto));
+  }
+  .contacts {
+    padding-bottom: 30px;
+  }
+  .contacts__policy {
+    grid-row: 2/3;
+    width: 200px;
+    margin: 0 auto;
+    line-height: 18px;
+    position: absolute;
+    left: -220px;
+    top: 20px;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -1383,7 +1447,7 @@ h6 {
 .contacts__input input {
   height: 100%;
   width: 100%;
-  min-height: 45px;
+  max-height: 45px;
   padding: 0px 10px;
   font-size: 12px;
   line-height: 18px;
@@ -1397,7 +1461,7 @@ h6 {
 .contacts__textarea textarea {
   height: 100%;
   width: 100%;
-  min-height: 190px;
+  max-height: 190px;
   padding: 15px;
   resize: none;
 }

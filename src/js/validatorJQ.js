@@ -24,7 +24,7 @@ $(document).ready(function () {
 	validateForms('#contacts-form');
 
 
-	$(window).scroll(() => $(this).scrollTop() > 1500 ? $('.pageup').fadeIn() :
+	$(window).scroll(() => $(this).scrollTop() > 700 ? $('.pageup').fadeIn() :
 		$('.pageup').fadeOut());
 
 });

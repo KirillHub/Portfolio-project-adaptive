@@ -76,12 +76,12 @@
 					</div>
 					<nav>
 						<ul class="menu__list">
-							<li class="menu__link"><a href="#">ПРО МЕНЯ</a></li>
-							<li class="menu__link"><a href="#">МОЙ ОПЫТ</a></li>
-							<li class="menu__link"><a href="#">МОИ НАВЫКИ</a></li>
-							<li class="menu__link"><a href="#">МОИ РАБОТЫ</a></li>
-							<li class="menu__link"><a href="#">ПРАЙС-ЛИСТ</a></li>
-							<li class="menu__link"><a href="#">КОНТАКТЫ</a></li>
+							<li class="menu__link"><a href="#about_me">ABOUT ME</a></li>
+							<li class="menu__link"><a href="#experience">MY EXPERIENCE</a></li>
+							<li class="menu__link"><a href="#skills">MY SKILLS</a></li>
+							<li class="menu__link"><a href="#portfolio">MY WORKS</a></li>
+							<li class="menu__link"><a href="#price">PRICE LIST</a></li>
+							<li class="menu__link"><a href="#contacts">CONTACTS</a></li>
 						</ul>
 					</nav>
 					<div class="menu__social">
@@ -122,11 +122,13 @@
 				</div>
 			</section>
 
-			<section class="about_me">
+			<section class="about_me" id="about_me">
 				<div class="_grid-container">
 					<div class="about_me__body-grid">
 						<div class="about_me__img">
-							<img src="./img/img/about_me/my-image.jpg" alt="photo">
+							<picture>
+								<img src="./img/img/about_me/my-image.jpg" alt="photo">
+							</picture>
 						</div>
 						<div class="about_me__main">
 							<div class="about_me__body" id="about_me__body">
@@ -192,7 +194,7 @@
 				</div>
 			</section>
 
-			<section class="resume">
+			<section class="resume" id="experience">
 				<div class="_grid-container">
 					<h2 class="title title_fz16 title__section-title">Experience</h2>
 					<div class="title title_fz36 title__section-subtitle">My skills</div>
@@ -280,7 +282,7 @@
 				</div>
 			</section>
 
-			<section class="work">
+			<section class="work" id="skills">
 				<div class="_grid-container">
 					<div class="work__header work-header">
 						<h3 class="title__section-title title title_fz16">Skills</h3>
@@ -419,7 +421,7 @@
 				</div>
 			</section>
 
-			<section class="portfolio">
+			<section class="portfolio" id="portfolio">
 				<div class="_grid-container">
 					<h3 class="title__section-title title title_fz16">Portfolio</h3>
 					<div class="title__section-subtitle title title_fz36">My works</div>
@@ -439,15 +441,19 @@
 							<img src="./img/img/portfolio/plans.jpg" alt="test">
 						</a>
 						<a href="#" class="portfolio__item minesweeper">
-							<img src="./img/img/portfolio/minesweeper.jpg" alt="minesweeper">
+							<img srcset="" src="./img/img/portfolio/minesweeper.jpg" alt="minesweeper">
 						</a>
 						<a href="/dist/relvise/" class="portfolio__item horizontal">
-							<img src="./img/img/portfolio/bg.jpg" alt="test">
+							<img srcset="./img/img/portfolio/bg.jpg 400w,
+							./img/img/portfolio/relv-min.jpg 500w" 
+							sizes="(min-width: 1201px) 400px" 
+							sizes="(max-width: 1200px) 200px"
+								src="./img/img/portfolio/bg.jpg" alt="test">
 						</a>
 					</div>
 			</section>
 
-			<section class="price">
+			<section class="price" id="price">
 				<div class="_grid-container">
 					<h3 id="title__section-title_price" class="title__section-title title title_fz16">Price list</h3>
 					<div class="divider"></div>
@@ -487,7 +493,7 @@
 				</div>
 			</section>
 
-			<section class="contacts">
+			<section class="contacts" id="contacts">
 				<div class="_grid-container">
 					<div class="contacts__wrapper">
 						<div class="contacts__photo">
