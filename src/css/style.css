@@ -1446,3 +1446,16 @@ label.error {
   text-align: center;
   font-size: 13px;
 }
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+.pageup img {
+  max-width: 35px;
+  max-height: 35px;
+}

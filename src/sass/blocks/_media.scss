@@ -6,10 +6,7 @@
 }
 
 @media only screen and (max-width: 1200px){
-	// .container{
-	// 	max-width: 960px;
-	// }
-		
+
 	._grid-container{
 		max-width: 1140px;
 	};
@@ -71,9 +68,6 @@
 
 }
 @media only screen and (max-width: 992px){
-	// .container{
-	// 	max-width: 720px;
-	// }
 	._grid-container{
 		max-width: 720px;
 	};
@@ -139,9 +133,6 @@
 
 }
 @media only screen and (max-width: 768px){
-	// .container{
-	// 	max-width: 540px;
-	// }
 
 	.title{
 		&_fz48{
@@ -224,9 +215,6 @@
 
 }
 @media only screen and (max-width: 576px){
-	// .container{
-	// 	width: 100%;
-	// }
 
 		.btn{
 			padding: 8px 20px;
@@ -234,7 +222,6 @@
 		}
 
 		.title{
-			//? later adaptive
 				&_fz48{
 					font-size: 26px;
 					line-height: calc(29px / 26px);
@@ -251,7 +238,6 @@
 			}
 
 		.promo{
-			// min-height: 100vh;
 			&__body{
 				padding: 90px 0 65px;
 				&::after{

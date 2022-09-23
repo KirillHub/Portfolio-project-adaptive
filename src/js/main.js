@@ -19,22 +19,6 @@ persentCount.forEach((persentItem, persentIndex) => {
 	scale[persentIndex].style.width = persentItem.innerHTML;
 });
 
-//later
-function validateForms(form) {
-	$(form).validate({
-		rules: {
-			name: {
-				required: true,
-				minlength: 2
-			},
-		},
-		messages: {
-			email: {
-				required: "Это обязательное поле",
-				email: "Не верный формат адреса электронной почты"
-			}
-		}
-	});
-};
 
-validateForms('#contacts-form');
+
+
