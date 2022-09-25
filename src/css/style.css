@@ -1439,8 +1439,11 @@ h6 {
     margin: 0 auto;
     line-height: 18px;
     position: absolute;
-    left: 100px;
     top: -16px;
+    justify-content: space-around;
+  }
+  .contacts__policy input {
+    padding-left: 30px;
   }
 }
 @media only screen and (max-width: 390px) {
@@ -1472,8 +1475,6 @@ h6 {
     margin: 0 auto;
     line-height: 18px;
     position: absolute;
-    left: -220px;
-    top: 20px;
   }
   .contacts .contacts__form textarea {
     height: 100px;
