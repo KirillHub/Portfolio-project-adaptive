@@ -1,1 +1,1 @@
-My own Portfolio-project, adaptive;
+# Portfolio-project, adaptive
